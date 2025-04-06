@@ -4,7 +4,21 @@ using namespace std;
 
 void sort(int arr[],int size)
 {
-    
+    int exchange,boand,i,temp;
+    exchange=size-1;
+    while(!exchange!=0)
+    {
+        boand=exchange;
+        exchange=0;
+        for(i=0;i<exchange;i++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                swap(arr[i],arr[i+1]);
+                exchange=i;
+            }
+        }
+    }
 }
 
 int main()
